@@ -6,13 +6,13 @@ services:
     container_name: mysql
     restart: always
     ports:
-      - 6603:3306
+      - 3306:3306
     environment:
       MYSQL_USER: "mysql"
       MYSQL_PASSWORD: "mysql"
-      # MYSQL_ROOT_PASSWORD: "mysql"
+      MYSQL_ROOT_PASSWORD: "mysql"
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: "test"
+      MYSQL_DATABASE: "platform_base"
     volumes:
       - mysql-data:/var/lib/mysql
 
