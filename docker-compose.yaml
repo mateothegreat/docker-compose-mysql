@@ -11,8 +11,8 @@ services:
       MYSQL_USER: "mysql"
       MYSQL_PASSWORD: "mysql"
       MYSQL_ROOT_PASSWORD: "mysql"
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: "platform_base"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+      MYSQL_DATABASE: "mydatabase"
     volumes:
       - mysql-data:/var/lib/mysql
 
