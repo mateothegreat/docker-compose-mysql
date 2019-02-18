@@ -15,6 +15,10 @@ services:
       MYSQL_DATABASE: "mydatabase"
     volumes:
       - mysql-data:/var/lib/mysql
+    networks:
+      - lan
 
 volumes:
   mysql-data:
+networks:
+  lan:
